@@ -1,0 +1,137 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+    color: #00f2ff;
+}
+
+header {
+    background: #1a1a1a;
+    color: #00f2ff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #00f2ff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 4px solid  #00f2ff;
+    padding-left: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #00f2ff;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00f2ff;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #1a1a1a;
+}
+.m {
+    color:#00ffcc;
+    border-radius: 15px; /* Сглаженные углы */
+    padding: 20px;
+    text-align: center; /* Центрирование текста */
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: appear 2s forwards;
+    margin-bottom: 20px; /* Отступ снизу */
+    
+}
+.w {
+    color:rgb(255, 255, 255);
+    border-radius: 15px; /* Сглаженные углы */
+    padding: 20px;
+    text-align: center; /* Центрирование текста */
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: appear 2s forwards;
+    margin-bottom: 20px; /* Отступ снизу */
+}
+@keyframes appear {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        img {
+            width: 500px; /* Ширина изображения */
+            border-radius: 15px; /* Сглаженные углы для изображения */
+            opacity: 0;
+            animation: imageFadeIn 2s forwards;
+            display: block; /* Отображение изображения как блочного элемента */
+            margin: 20px auto; /* Центрирование изображения */
+        }
+
+        @keyframes imageFadeIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+input {
+    padding: 10px; /* Отступ внутри поля */
+    border: 2px solid #ccc; /* Цвет рамки */
+    border-radius: 5px; /* Скругленные углы */
+    font-size: 16px; /* Размер шрифта */
+    width: 100%; /* Ширина 100% от родительского элемента */
+    box-sizing: border-box; /* Учитывать отступы и границы в ширине */
+    transition: border-color 0.3s; /* Плавный переход цвета рамки */
+}
+
+/* Стили для текстовых полей */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    margin-bottom: 15px; /* Отступ снизу между полями */
+}
+
+/* Стили при фокусе */
+input:focus {
+    border-color: #007BFF; /* Цвет рамки при фокусе */
+    outline: none; /* Убираем стандартный контур */
+}
+
+/* Стили для кнопок */
